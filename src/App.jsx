@@ -3,7 +3,8 @@ import "./App.css";
 import axios from "axios";
 
 function App() {
-  const APIKEY = "d4730c8ea998e41c11ec7e26679f522b";
+  const APIKEY = process.env.REACT_APP_WEATHER_API_KEY;
+
   const [weatherData, setWeatherData] = useState({});
   const [cityName, setCityName] = useState("Karachi");
   const [backgroundClass, setBackgroundClass] = useState("daytime");
