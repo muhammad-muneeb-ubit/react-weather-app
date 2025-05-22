@@ -1,0 +1,137 @@
+.container {
+  width: 100%;
+  height: 110vh;
+  background: linear-gradient(135deg, #a8c0ff, #3f2b96);
+
+}
+
+.container-heading {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.card {
+  width: 100%;
+  max-width: 500px;
+  margin: 0px auto 39px;
+  border-radius: 8px;
+  background: linear-gradient(20deg, #4D55CC, #B5A8D5);
+  padding: 26px 0px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  transition: all 0.3s ease-in-out;
+}
+
+.input {
+  width: 70% !important;
+  border: 1px dotted #98ABEE;
+  padding: 10px;
+  margin: 12px auto;
+  border-radius: 5px;
+  background: transparent;
+  color: #98ABEE;
+  font-size: medium;
+
+}
+
+::placeholder {
+  color: #98ABEE;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.c-name,
+.c-tem {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+}
+
+.c-humadity,
+.c-wind,
+.c-desp,
+.c-feel {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+}
+
+span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+span img.icon {
+  width: 150px;
+  height: 150px;
+
+}
+
+.card.daytime {
+  background-image: url('./assets/d1.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card.nighttime {
+  background-image: url('./assets/n2.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .card.nighttime {
+    background-image: url('./assets/n1.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .container {
+    height: 100vh;
+  }
+
+  .card {
+    height: 60vh;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0px;
+    border-radius: 8px;
+  }
+
+
+  .input {
+    width: 80%;
+    font-size: medium;
+  }
+
+  .c-name,
+  .c-tem,
+  .c-humadity,
+  .c-wind,
+  .c-desp,
+  .c-feel {
+    font-size: x-large;
+  }
+
+
+
+}
